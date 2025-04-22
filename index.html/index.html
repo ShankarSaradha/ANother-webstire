@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Organization</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="assets/images/logo.png">
+</head>
+<body class="bg-gray-100 font-sans">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md fixed w-full z-10">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="assets/images/logo.png" alt="Logo" class="h-10">
+                <span class="ml-2 text-xl font-bold text-gray-800">OurOrg</span>
+            </div>
+            <div class="space-x-6">
+                <a href="#home" class="text-gray-600 hover:text-blue-600">Home</a>
+                <a href="#about" class="text-gray-600 hover:text-blue-600">About</a>
+                <a href="#products" class="text-gray-600 hover:text-blue-600">Products</a>
+                <a href="#contact" class="text-gray-600 hover:text-blue-600">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="h-screen flex items-center justify-center bg-cover bg-center" style="background-image: url('assets/images/hero-bg.jpg')">
+        <div class="text-center text-white">
+            <h1 class="text-5xl font-bold mb-4">Welcome to Our Organization</h1>
+            <p class="text-xl mb-6">Innovate. Inspire. Impact.</p>
+            <a href="#products" class="bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition">Explore Products</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center mb-8">
+                <img src="assets/icons/info.svg" alt="Info Icon" class="h-8 w-8 mr-2">
+                <h2 class="text-3xl font-bold text-gray-800">About Us</h2>
+            </div>
+            <p class="text-lg text-gray-600 mb-6">
+                Our organization is dedicated to creating innovative solutions that drive sustainable progress. Founded in 2020, we combine cutting-edge technology with a passion for positive impact. Our mission is to empower communities through high-quality products and services.
+            </p>
+            <p class="text-lg text-gray-600">
+                With a focus on minimalism and functionality, we design products that are both aesthetically pleasing and highly effective. Join us in shaping a better future.
+            </p>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center mb-8">
+                <img src="assets/icons/product.svg" alt="Product Icon" class="h-8 w-8 mr-2">
+                <h2 class="text-3xl font-bold text-gray-800">Our Products</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="product-card bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition">
+                    <img src="assets/images/product1.jpg" alt="Product 1" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold text-gray-800">Product One</h3>
+                        <p class="text-gray-600">A revolutionary product designed for efficiency and style.</p>
+                        <button class="mt-4 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Learn More</button>
+                    </div>
+                </div>
+                <div class="product-card bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition">
+                    <img src="assets/images/product2.jpg" alt="Product 2" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold text-gray-800">Product Two</h3>
+                        <p class="text-gray-600">Innovative technology for a seamless experience.</p>
+                        <button class="mt-4 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Learn More</button>
+                    </div>
+                </div>
+                <div class="product-card bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition">
+                    <img src="assets/images/product3.jpg" alt="Product 3" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold text-gray-800">Product Three</h3>
+                        <p class="text-gray-600">Built for durability and performance.</p>
+                        <button class="mt-4 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center mb-8">
+                <img src="assets/icons/contact.svg" alt="Contact Icon" class="h-8 w-8 mr-2">
+                <h2 class="text-3xl font-bold text-gray-800">Get in Touch</h2>
+            </div>
+            <div class="max-w-lg mx-auto">
+                <form id="contact-form" class="space-y-4">
+                    <input type="text" name="name" placeholder="Your Name" class="w-full p-3 border rounded focus:outline-none focus:ring-2 focus:ring-blue-600" required>
+                    <input type="email" name="email" placeholder="Your Email" class="w-full p-3 border rounded focus:outline-none focus:ring-2 focus:ring-blue-600" required>
+                    <textarea name="message" placeholder="Your Message" class="w-full p-3 border rounded focus:outline-none focus:ring-2 focus:ring-blue-600" rows="5" required></textarea>
+                    <button type="submit" class="bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700 transition">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2025 Our Organization. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
