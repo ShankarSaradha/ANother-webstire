@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 /* Custom styles to complement Tailwind */
 body {
     color: black; 
@@ -100,4 +104,8 @@ nav {
 
 #menu-toggle {
     color: white;
+}
+
+"scripts": {
+  "build": "tailwindcss -i ./css/styles.css -o ./css/tailwind.css --watch"
 }
